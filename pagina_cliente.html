@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Le Beauty</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="cart-minimalist.css">
+    <script src="cliente.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .profile-header {
+            background-color: #FFC0CB;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-top: -100px;
+            box-shadow: 0 4px 8px rgb(255, 153, 171);
+        }
+        .profile-info-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgb(255, 153, 171);
+        }
+        .btn-pink {
+            background-color: #FFC0CB;
+            color: white;
+            border-color: #FFC0CB;
+        }
+        .btn-pink:hover {
+            background-color: #ff99ab;
+            border-color: rgb(255, 153, 171);
+        }
+        .button {
+            background: pink;
+            color: white;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .button-focus {
+            color: white;
+        }
+        button:hover {
+            transform: scale(1.07);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="profile-header">
+                    <h1 class="display-4">Bem-vindo(a), <span id="nomeClienteHeader"></span>!</h1>
+                    <p class="lead">Esta é sua área de cliente. Aqui você pode gerenciar suas informações.</p>
+                </div>
+
+                <div class="profile-info-card mt-4">
+                    <h3>Informações da Conta</h3>
+                    <hr>
+                    <p><strong>Nome:</strong> <span id="nomeCliente"></span></p>
+                    <p><strong>Email:</strong> <span id="emailCliente"></span></p>
+                    <a href="editar-perfil copy.html" class="button">Editar Perfil</a>
+                </div>
+
+                <div class="profile-info-card mt-4">
+                    <h3>Meus Pedidos</h3>
+                    <hr>
+                    <p>Você ainda não fez nenhum pedido.</p>
+                    <a href="home.html" class="btn btn-pink">Fazer uma compra agora!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
